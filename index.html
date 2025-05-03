@@ -1,52 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Свадьба Марии и Хайала</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: sans-serif; padding: 30px; background: #fff8f5; }
-    h1 { text-align: center; color: #a2705e; }
-    form { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    label { display: block; margin-top: 15px; }
-    input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; }
-    button { background: #a2705e; color: white; border: none; padding: 10px 20px; margin-top: 20px; cursor: pointer; }
+    body {
+      font-family: Georgia, serif;
+      background-color: #fffaf9;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fbe8e7;
+      padding: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .photos img {
+      border-radius: 10px;
+      width: 250px;
+      height: auto;
+      object-fit: cover;
+    }
+    .story {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+    .gallery img {
+      width: 300px;
+      margin: 15px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
 
-<h1>Вы приглашены на свадьбу!</h1>
-<p style="text-align:center;">29 августа 2025, Москва</p>
+  <header>
+    <h1>Мария и Хайал</h1>
+    <p>Наша история любви</p>
+  </header>
 
-<form action="https://formspree.io/f/xpwdpokz" method="POST">
-  <label>Ваше имя:</label>
-  <input type="text" name="Имя" required>
+  <!-- Фотографии жениха и невесты -->
+  <section class="photos">
+    <img src="https://github.com/GulievK/maria-khayal.github.io/blob/main/IMG_6330.jpg?raw=true" alt="Невеста">
+    <img src="https://github.com/GulievK/maria-khayal.github.io/blob/main/IMG_9603.jpg?raw=true" alt="Жених">
+  </section>
 
-  <label>Вы придёте?</label>
-  <select name="Присутствие">
-    <option value="Да">Да</option>
-    <option value="Нет">Нет</option>
-    <option value="Пока не уверен(а)">Пока не уверен(а)</option>
-  </select>
+  <!-- История знакомства -->
+  <section class="story">
+    <h2>Как мы познакомились</h2>
+    <p>Мы встретились в один случайный, но судьбоносный день. Никто из нас не ожидал, что этот момент перевернёт всю жизнь. Сначала была робкая переписка, потом встреча за чашкой кофе, и всё закружилось. Мы поняли, что созданы друг для друга.</p>
 
-  <label>С кем вы придёте (если не одни)?</label>
-  <input type="text" name="Гость">
+    <h2>Как Хайал сделал предложение</h2>
+    <p>Это был волшебный день. У Маши был выпускной в медицинском и вручение диплома, после которого мы всей семьей пошли в ресторан. Когда наступила моя очередь говорить тост, я встал на одно колено и сделал предложение. Маша сказала "Да!" не раздумывая!</p>
+  </section>
 
-  <label>Какой алкоголь предпочитаете?</label>
-  <select name="Алкоголь">
-    <option value="Шампанское">Шампанское</option>
-    <option value="Вино">Вино</option>
-    <option value="Виски">Виски</option>
-    <option value="Виски">Водка</option>
-    <option value="Без алкоголя">Без алкоголя</option>
-  </select>
-
-  <label>Комментарий (по желанию):</label>
-  <textarea name="Комментарий" rows="4"></textarea>
-
-  <button type="submit">Отправить</button>
-</form>
+  <!-- Дополнительные фотографии -->
+  <section class="gallery">
+    <img src="https://github.com/GulievK/maria-khayal.github.io/blob/main/IMG_2483.JPG?raw=true" alt="Фото 1">
+    
+  </section>
 
 </body>
 </html>
