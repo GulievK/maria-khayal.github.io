@@ -72,6 +72,39 @@
     <img src="https://github.com/GulievK/maria-khayal.github.io/blob/main/IMG_2483.JPG?raw=true" alt="Фото 1">
     
   </section>
+<section style="background-color:#fefefe; padding:40px;">
+  <h2>Подтвердите участие</h2>
+  <form action="https://formspree.io/f/xpwdpokz" method="POST" style="max-width:600px;margin:auto;text-align:left;">
+    <label>Ваше имя:<br>
+      <input type="text" name="Имя" required style="width:100%;padding:10px;margin:10px 0;">
+    </label><br>
 
+    <label>Вы придёте?<br>
+      <select name="Придёте ли?" required style="width:100%;padding:10px;margin:10px 0;">
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+        <option value="Пока не знаю">Пока не знаю</option>
+      </select>
+    </label><br>
+
+    <label>Сколько человек будет с вами?<br>
+      <input type="number" name="Количество гостей" min="1" max="10" style="width:100%;padding:10px;margin:10px 0;">
+    </label><br>
+
+    <label>Что предпочитаете из напитков?<br>
+      <input type="checkbox" name="Алкоголь" value="Вино"> Вино<br>
+      <input type="checkbox" name="Алкоголь" value="Шампанское"> Шампанское<br>
+      <input type="checkbox" name="Алкоголь" value="Виски"> Виски<br>
+      <input type="checkbox" name="Алкоголь" value="Водка"> Виски<br>
+      <input type="checkbox" name="Алкоголь" value="Не пью"> Не пью
+    </label><br><br>
+
+    <label>Комментарий или пожелания:<br>
+      <textarea name="Комментарий" rows="4" style="width:100%;padding:10px;"></textarea>
+    </label><br><br>
+
+    <button type="submit" style="padding:10px 20px;">Отправить</button>
+  </form>
+</section>
 </body>
 </html>
